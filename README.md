@@ -11,7 +11,7 @@ mesg-core service deploy https://github.com/emrekeskinmac/service-sms-twilio.git
 #### inputs
 | input | type | description |
 | --- | --- | --- |
-| accountSid | String | The twilio Account SID that you can create here https://www.twilio.com/console |
+| accountSid | String | The Twilio Account SID that you can create here https://www.twilio.com/console |
 | authToken | String | The Twilio Account Auth Token that you can create here https://www.twilio.com/console |
 | from | String | The account to send the sms from |
 | to | String | The recipient of the sms |
