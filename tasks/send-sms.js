@@ -1,6 +1,6 @@
 module.exports = ({ body, from, to, accountSid, authToken }, { success, failure }) => {
-  if (!body && !from && !to) {
-    failure({ message: "at least of the 'body' and 'from' and 'to' contents must be provided" })
+  if (!body && !from && !to && !accountSid && !authToken) {
+    failure({ message: "at least of the 'body' and 'from' and 'to' and 'accountSid' and 'authToken' contents must be provided" })
     return
   }
 
