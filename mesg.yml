@@ -1,0 +1,44 @@
+name: "Twillo SMS Service"
+sid: sms-twillo
+description: "Send SMS with Twillo"
+tasks: 
+  sendSms:
+    description: "Send email with Twillo"
+    inputs:
+      accountSid:
+        name: "Twillo Account SID"
+        description: "The Twillo Account SID that you can create here https://www.twilio.com/console"
+        type: String
+      authToken:
+        name: "Twillo Account Auth Token"
+        description: "The Twillo Account Auth Token that you can create here https://www.twilio.com/console"
+        type: String
+      from:
+        name: "From"
+        description: "The account to send the sms from"
+        type: String
+      to:
+        name: "To"
+        description: "The recipient of the sms"
+        type: String
+      body:
+        name: "Body"
+        description: "The body of the sms"
+        type: String
+    outputs:
+      success:
+        name: "Success"
+        description: "When the sms is successfully sent"
+        data:
+          status:
+            name: "Status"
+            description: "Status returned by the Twillo API"
+            type: String
+      failure:
+        name: "Failure"
+        description: "when an error occurs when trying to send the sms (this can be any kind of error, wrong phone number, Twillo API down...)"
+        data:
+          message:
+            name: "Message"
+            description: "Error message"
+            type: String

@@ -1,0 +1,12 @@
+{
+  "name": "sms-twillo",
+  "version": "1.0.0",
+  "description": "Send Sms with Twillo",
+  "main": "index.js",
+  "author": "Emre Keskin <me@emrekesk.in>",
+  "license": "MIT",
+  "dependencies": {
+    "mesg-js": "^1.2.2",
+    "twilio": "^3.27.1"
+  }
+}
