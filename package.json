@@ -1,7 +1,7 @@
 {
-  "name": "sms-twillo",
+  "name": "sms-twilio",
   "version": "1.0.0",
-  "description": "Send Sms with Twillo",
+  "description": "Send Sms with Twilio",
   "main": "index.js",
   "author": "Emre Keskin <me@emrekesk.in>",
   "license": "MIT",

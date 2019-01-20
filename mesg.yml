@@ -1,17 +1,17 @@
-name: "Twillo SMS Service"
-sid: sms-twillo
-description: "Send SMS with Twillo"
+name: "Twilio SMS Service"
+sid: sms-twilio
+description: "Send SMS with Twilio"
 tasks: 
   sendSms:
-    description: "Send email with Twillo"
+    description: "Send email with Twilio"
     inputs:
       accountSid:
-        name: "Twillo Account SID"
-        description: "The Twillo Account SID that you can create here https://www.twilio.com/console"
+        name: "Twilio Account SID"
+        description: "The Twilio Account SID that you can create here https://www.twilio.com/console"
         type: String
       authToken:
-        name: "Twillo Account Auth Token"
-        description: "The Twillo Account Auth Token that you can create here https://www.twilio.com/console"
+        name: "Twilio Account Auth Token"
+        description: "The Twilio Account Auth Token that you can create here https://www.twilio.com/console"
         type: String
       from:
         name: "From"
@@ -32,11 +32,11 @@ tasks:
         data:
           status:
             name: "Status"
-            description: "Status returned by the Twillo API"
+            description: "Status returned by the Twilio API"
             type: String
       failure:
         name: "Failure"
-        description: "when an error occurs when trying to send the sms (this can be any kind of error, wrong phone number, Twillo API down...)"
+        description: "when an error occurs when trying to send the sms (this can be any kind of error, wrong phone number, Twilio API down...)"
         data:
           message:
             name: "Message"
