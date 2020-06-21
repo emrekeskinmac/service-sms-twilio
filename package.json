@@ -6,7 +6,7 @@
   "author": "Emre Keskin <me@emrekesk.in>",
   "license": "MIT",
   "dependencies": {
-    "mesg-js": "^1.2.2",
+    "@liteflow/service": "^1.0.7",
     "twilio": "^3.27.1"
   }
 }
